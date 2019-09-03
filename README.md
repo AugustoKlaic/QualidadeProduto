@@ -1,4 +1,4 @@
 # QualidadeProduto
 Product Qualiy classes
 
-https://travis-ci.com/AugustoKlaic/QualidadeProduto.svg?branch=master
+[![Build Status](https://travis-ci.com/AugustoKlaic/QualidadeProduto.svg?branch=master)](https://travis-ci.com/AugustoKlaic/QualidadeProduto)
