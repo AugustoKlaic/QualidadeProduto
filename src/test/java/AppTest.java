@@ -29,6 +29,14 @@ public class AppTest{
         assertEquals(myLinkedList.traverse() , 1);
     }
 
+    @Test
+    public void testAddNodeInTheEnd(){
+        myLinkedList.addNodeInLast(nodeHead);
+        myLinkedList.addNodeInLast(node);
+        myLinkedList.addNodeInLast(nodeTail);
+        assertEquals(myLinkedList.traverse(), 3);
+    }
+
 }
 
 
