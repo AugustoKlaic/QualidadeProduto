@@ -12,8 +12,9 @@ public class AppTest{
 
     @Before
     public void setup(){
-        nodeTail = new Node("tail", node);
-        nodeHead = new Node("head", node);
+        node = new Node();
+        nodeTail = new Node();
+        nodeHead = new Node();
         myLinkedList = new MyLinkedList();
     }
 
@@ -31,9 +32,16 @@ public class AppTest{
 
     @Test
     public void testAddNodeInTheEnd(){
+        nodeHead.setData("head");
+        nodeHead.setNext(node);
+        node.setData("Middle one");
+        node.setNext(nodeTail);
+        nodeTail.setData("tail");
+
         myLinkedList.addNodeInLast(nodeHead);
         myLinkedList.addNodeInLast(node);
         myLinkedList.addNodeInLast(nodeTail);
+
         assertEquals(myLinkedList.traverse(), 3);
     }
 

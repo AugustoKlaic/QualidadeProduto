@@ -19,8 +19,13 @@ public class Node {
     }
 
     public Node(String data, Node next) {
+        this();
         this.data = data;
         this.next = next;
+    }
+
+    public Node(){
+
     }
 
     public String toString() {
