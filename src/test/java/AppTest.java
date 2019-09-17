@@ -50,7 +50,7 @@ public class AppTest{
         nodeHead.setData("head");
         nodeHead.setNext(node);
         node.setData("Middle one");
-        node.setNext(nodeTail);
+        node.setNext(null);
 
         myLinkedList.addNodeInLast(nodeHead);
         myLinkedList.addNodeInLast(node);

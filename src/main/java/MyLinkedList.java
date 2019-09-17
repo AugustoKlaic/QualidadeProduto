@@ -25,8 +25,8 @@ public class MyLinkedList {
             while(tempHead != null) {
                 System.out.print("Node : " + tempHead.toString());
                 System.out.println(", ");
-                tempHead = tempHead.getNext();
                 listSize++;
+                tempHead = tempHead.getNext();
             }
             System.out.println("");
         }
