@@ -11,14 +11,14 @@ public class MyLinkedList {
         }
     }
     public int getSize(){
-        return traverse;
+        return traverse();
     }
     public int traverse() {
         int listSize = 0;
         if (head == null) {
             return listSize;
         } else {
-            Node temṕHead = head;
+            Node tempHead = head;
             while(tempHead != null) {
                 System.out.print("Node : " + tempHead.toString());
                 System.out.println(", ");

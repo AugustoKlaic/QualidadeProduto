@@ -1,26 +1,24 @@
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.junit.Before;
+import org.junit.Test;
 
-public class AppTest 
-    extends TestCase
-{
+public class AppTest{
 
-    public AppTest( String testName )
-    {
-        super( testName );
+    private Node nodeHead;
+    private Node nodeTail;
+    private Node node;
+    private MyLinkedList myLinkedList;
+
+    @Before
+    public void setup(){
+        nodeHead = new Node();
+        nodeTail = new Node();
+        node = new Node();
+        myLinkedList = new MyLinkedList();
     }
 
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
+    @Test
+    public void testListSize(){
 
-    public void testEquilatero()
-    {
-        int actual = App.identificaTriangulo(5, 5, 5);
-        int expected = tipos.EQUILATERO.value();
-        assertEquals(expected, actual);
     }
 }
 
