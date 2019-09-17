@@ -45,6 +45,18 @@ public class AppTest{
         assertEquals(myLinkedList.traverse(), 3);
     }
 
+    @Test
+    public void testGetSize(){
+        nodeHead.setData("head");
+        nodeHead.setNext(node);
+        node.setData("Middle one");
+        node.setNext(nodeTail);
+
+        myLinkedList.addNodeInLast(nodeHead);
+        myLinkedList.addNodeInLast(node);
+
+        assertEquals(myLinkedList.getSize(), 2);
+    }
 }
 
 
