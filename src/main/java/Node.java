@@ -14,7 +14,7 @@ public class Node {
         return next;
     }
 
-    public vid setNext(Node next) {
+    public void setNext(Node next) {
         this.next = next;
     }
 
