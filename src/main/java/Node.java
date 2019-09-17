@@ -2,10 +2,6 @@ public class Node {
     private String data;
     private Node next;
 
-    public Node(){
-        
-    }
-
     public String getData() {
         return next.toString();
     }

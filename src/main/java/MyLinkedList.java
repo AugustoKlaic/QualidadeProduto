@@ -1,6 +1,7 @@
 public class MyLinkedList {
-    Node head;
-    Node tail;
+    private Node head;
+    private Node tail;
+
     public void addNodeInLast(Node node) {
         if (null == head) {
             head=node;
@@ -10,9 +11,11 @@ public class MyLinkedList {
             tail=node;
         }
     }
+
     public int getSize(){
         return traverse();
     }
+
     public int traverse() {
         int listSize = 0;
         if (head == null) {

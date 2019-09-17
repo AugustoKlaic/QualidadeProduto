@@ -1,6 +1,8 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class AppTest{
 
     private Node nodeHead;
@@ -10,16 +12,23 @@ public class AppTest{
 
     @Before
     public void setup(){
-        nodeHead = new Node();
-        nodeTail = new Node();
-        node = new Node();
+        nodeTail = new Node("tail", node);
+        nodeHead = new Node("head", node);
         myLinkedList = new MyLinkedList();
     }
 
     @Test
-    public void testListSize(){
-
+    public void testListSizeWithHeadNull(){
+        nodeHead = null;
+        assertEquals(myLinkedList.traverse() , 0);
     }
+
+    @Test
+    public void testListSizeWithHeadNotNull(){
+        myLinkedList.addNodeInLast(nodeHead);
+        assertEquals(myLinkedList.traverse() , 1);
+    }
+
 }
 
 
